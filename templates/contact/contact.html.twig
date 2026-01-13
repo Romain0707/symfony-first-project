@@ -7,24 +7,11 @@
         <div class="container">
             <h1>Contactez-Nous</h1>
             <p class="title_paragraph">Avez-vous des questions ou des suggestions? N'hésitez pas à nous contacter!</p>
-            <form action="">
-                <label for="">Nom:</label>
-                <input type="text">
-                <label for="">Email:</label>
-                <input type="text">
-                <label for="">Choisissez un Sujet:</label>
-                <select name="pets" id="pet-select">
-                    <option value="">Sélectionnez un sujet</option>
-                    <option value="math">Mathématiques</option>
-                    <option value="science">Sciences</option>
-                    <option value="litterature">Littérature</option>
-                </select>
-                <label for="">Sujet:</label>
-                <input type="text">
-                <label for="">Message:</label>
-                <textarea name="" id=""></textarea>
+
+            {{form_start(form_name)}}
+                {{form_widget(form_name)}}
                 <input type="submit" class="btn btn-contact">
-            </form>
+            {{form_end(form_name)}}
         </div>
     </section>
 {% endblock %}
