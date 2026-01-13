@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cours{% endblock %}
+
+{% block body %}
+
+    <section id="hero">
+        <div>
+            <h1>Bienvenue sur Kids Learning</h1>
+        </div>
+        <div>
+            <a href="" class="btn btn-orange">Découvrir</a>
+        </div>
+    </section>
+    <section id="cours">
+        <div class="container">
+            <h1>Nos Cours</h1>
+            <p>Apprenez à votre rythme avec nos cours en ligne</p>
+            <div class="card_container">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="{{asset('assets/img/maths.jpeg')}}" alt="Image dans une classe">
+                    </div>
+                    <div class="card_content">
+                        <h3>Mathématiques</h3>
+                        <p>Explorez les concepts fondamentaux et avancés des mathématiques et devenez un maître des nombres.</p>
+                        <a href="" class="btn btn-cours">Démarrer l'Apprentissage</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="{{asset('assets/img/science.jpeg')}}" alt="Image dans une classe">
+                    </div>
+                    <div class="card_content">
+                        <h3>Sciences</h3>
+                        <p>Découvrez les mystères de l'univers, de la biologie moléculaire à la physique quantique.</p>
+                        <a href="" class="btn btn-cours">Démarrer l'Apprentissage</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="{{asset('assets/img/literature.jpeg')}}" alt="Image dans une classe">
+                    </div>
+                    <div class="card_content">
+                        <h3>Littérature</h3>
+                        <p>Parcourez les oeuvres des plus grands auteurs, poètes, et dramaturges de l'histoire.</p>
+                        <a href="" class="btn btn-cours">Démarrer l'Apprentissage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+{% endblock %}

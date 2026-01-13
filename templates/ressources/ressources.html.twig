@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ressources{% endblock %}
+
+{% block body %}
+
+    <section id="ressource">
+        <div class="container">
+            <h1>Ressources</h1>
+            <p>Document, vidéos, et autres ressources pour approfondir vos connaissances</p>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Titre</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>PDF</td>
+                    <td>Introduction à la biologie</td>
+                    <td>Ce document fournit des informations de base sur la cellule, l'ADN, et d'autres sujets de biologie.</td>
+                </tr>
+                <tr>
+                    <td>Vidéo</td>
+                    <td>Les fondements de la Physique</td>
+                    <td>Une série de vidéos qui explique les concepts fondamentaux de la physique</td>
+                </tr>
+                <tr>
+                    <td>Podcast</td>
+                    <td>Les chefs-d'oeuvre de la Littérature</td>
+                    <td>Découvrez les analyses des plus grand chef-d'oeuvres de la littérature mondiale.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+{% endblock %}
