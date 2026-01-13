@@ -10,7 +10,21 @@
             <div class="img_container">
                 <img src="{{asset('assets/img/Logo.png')}}" alt="Image du Logo">
             </div>
-            <nav>
+            <nav class="nav">
+                <ul>
+                    <li><a href="{{path('index')}}">Accueil</a></li>
+                    <li><a href="{{path('cours')}}">Cours</a></li>
+                    <li><a href="{{path('ressources')}}">Ressources</a></li>
+                    <li><a href="{{path('contact')}}">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="responsive_nav">
                 <ul>
                     <li><a href="{{path('index')}}">Accueil</a></li>
                     <li><a href="{{path('cours')}}">Cours</a></li>
@@ -39,5 +53,8 @@
             </div>
 
         </footer>
+
+
+        <script src="{{asset('assets/Javascript/script.js')}}"></script>
     </body>
 </html>
